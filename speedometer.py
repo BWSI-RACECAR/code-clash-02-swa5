@@ -36,25 +36,29 @@ class Solution:
        # TODO: Write code below to return a list with the solution to the prompt
         returnlist = []
 
-        for number in ary: 
-            for addition in ary: 
-                if number != addition and number + addition == target and len(returnlist) < 2: 
-                    returnlist.append(number)
-                    returnlist.append(addition)
+        # for number in ary: 
+        #     for addition in ary: 
+        #         if number != addition and number + addition == target and len(returnlist) < 2: 
+        #             returnlist.append(number)
+        #             returnlist.append(addition)
 
-        if len(returnlist) > 0:
-            return returnlist 
-        else: 
+        # if len(returnlist) > 0:
+        #     return returnlist 
+        # else: 
+        #     return False 
+
+        for x in ary: 
+            other_num = target - x
+            if other_num in ary: 
+                return [ary.index(x), ary.index(other_num)]
             return False 
-
-
 def main():
-    array = input().split(" ")
-    # array = [1,2,3,4,5]
+    #array = input().split(" ")
+    array = [3,1,7]
     for x in range (len(array)):
         array[x] = int(array[x])
-    target = int(input())
-    # target = int(6)
+    #target = int(input())
+    target = int(4)
 
     tc1 = Solution()
     ans = tc1.two_numbers(array, target)
