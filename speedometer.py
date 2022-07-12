@@ -49,12 +49,12 @@ class Solution:
 
 
 def main():
-    # array = input().split(" ")
-    array = [1,2,3,4,5]
+    array = input().split(" ")
+    # array = [1,2,3,4,5]
     for x in range (len(array)):
         array[x] = int(array[x])
-    #target = int(input())
-    target = int(6)
+    target = int(input())
+    # target = int(6)
 
     tc1 = Solution()
     ans = tc1.two_numbers(array, target)
