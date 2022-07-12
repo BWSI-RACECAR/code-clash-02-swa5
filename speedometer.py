@@ -34,7 +34,8 @@ class Solution:
         # return type: list or bool
 
        # TODO: Write code below to return a list with the solution to the prompt
-        returnlist = []
+        
+        # returnlist = []
 
         # for number in ary: 
         #     for addition in ary: 
