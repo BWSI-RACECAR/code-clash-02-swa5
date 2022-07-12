@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Test1",
+      "setup": "",
+      "run": "python3 speedometer.py ",
+      "input": "1 2 3 4 5\r\n6",
+      "output": "[0, 4]",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Test2",
+      "setup": "",
+      "run": "python3 speedometer.py",
+      "input": "1 1 1\r\n3",
+      "output": "False",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Test3",
+      "setup": "",
+      "run": "python3 speedometer.py",
+      "input": "-1 1 1\r\n0",
+      "output": "[0, 1]",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Test4",
+      "setup": "",
+      "run": "python3 speedometer.py",
+      "input": "1 5 8 12 4\r\n20",
+      "output": "[2, 3]",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Test5",
+      "setup": "",
+      "run": "python3 speedometer.py",
+      "input": "-40 12 -7 11 -15\r\n-29",
+      "output": "[0, 3]",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
